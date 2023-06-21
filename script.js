@@ -31,7 +31,7 @@ function update() {
   });
 
   const actives = document.querySelectorAll('.active');
-  progress.style.width =
+  progress.style.height =
     ((actives.length - 1) / (circles.length - 1)) * 100 + '%';
 
   if (currentActive === 1) {
