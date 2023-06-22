@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
 
 :root {
+  /*Defining variables */
   --line-border-fill: #3498db;
   --line-border-empty: #e0e0e0;
 }
@@ -34,6 +35,7 @@ body {
 }
 
 .progress-container::before {
+  /* Adding a grey bar behined the progress bar */
   content: '';
   background-color: var(--line-border-empty);
   position: absolute;
@@ -50,7 +52,9 @@ body {
   position: absolute;
   top: 50%;
   left: 0;
-  transform: translateY(-50%);
+  transform: translateY(
+    -50%
+  ); /* The progress bar is in the middle of the container, however the top of the bar is in the middle. This property set the middle of the bar in the middle of the container */
   height: 4px;
   width: 0%;
   z-index: -1;
